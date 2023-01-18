@@ -37,6 +37,12 @@ namespace Stack_and_Queue
                 temp = temp.Next;
             }
         }
-       
+        public void dequeue()
+        {
+            Node temp = Top;
+            Top = temp.Next;
+            Console.WriteLine(temp.data + " is dequque from stack");
+        }
+
     }
 }

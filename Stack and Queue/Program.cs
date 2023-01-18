@@ -20,6 +20,8 @@
             queue.enqueue(30);
             queue.enqueue(70);
             queue.Display();
+            queue.dequeue();
+            queue.Display();
            
         }
     }
