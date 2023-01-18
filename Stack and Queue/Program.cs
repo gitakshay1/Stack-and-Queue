@@ -5,10 +5,16 @@
         static void Main(string[] args)
         {
             Stack stack=new Stack();
-            stack.Push(56);
-            stack.Push(30);
-            stack.Push(70);
+            stack.push(56);
+            stack.push(30);
+            stack.push(70);
             stack.Display();
+
+            stack.peek();
+            stack.Display();
+            stack.pop();
+            stack.Display();
+           
         }
     }
 }

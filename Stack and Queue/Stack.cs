@@ -9,7 +9,7 @@ namespace Stack_and_Queue
     internal class Stack
     {
         Node Top;
-        public void Push(int data)
+        public void push(int data)
         {
             Node node = new Node(data);
             if (Top == null)
@@ -27,11 +27,22 @@ namespace Stack_and_Queue
         public void Display()
         {
             Node temp= Top;
+            Console.WriteLine("*****Stack***");
             while(temp != null)
             {
                 Console.WriteLine(temp.data);
                 temp= temp.Next;
             }
+        }
+        public void peek()
+        {
+            Console.WriteLine(Top.data+" is peeked from stack\n");
+        }
+        public void pop()
+        {
+            Node temp= Top;
+            Top= temp.Next;
+            Console.WriteLine(temp.data + " is poped from stack\n");
         }
 
     }
